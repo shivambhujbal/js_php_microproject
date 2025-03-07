@@ -150,7 +150,7 @@ const FullMenuPage = () => {
         },
         {
           name: "Sweet Lassi",
-          description: "Traditional yogurt-based sweet drink. direct visit to lord shiva!",
+          description: "Traditional yogurt-based sweet drink.",
           price: "₹25",
           type: "veg",
           image: "https://www.alchimiaweb.com/blogen/wp-content/uploads/2018/01/bol.jpg"},
