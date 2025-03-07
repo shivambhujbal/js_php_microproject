@@ -23,7 +23,7 @@ const Menu = () => {
         {
           name: "Royal Wedding Package",
           description: "Complete wedding package with starters, main course, desserts. Serves 500+ guests",
-          price: "$4999.99",
+          price: "₹49999",
           image: "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           items: [
             {
@@ -70,7 +70,7 @@ const Menu = () => {
         {
           name: "Premium Wedding Combo",
           description: "Deluxe selection of veg and non-veg dishes. Serves 300+ guests",
-          price: "$3499.99",
+          price: "₹34999",
           image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           items: [
             {
@@ -120,7 +120,7 @@ const Menu = () => {
         {
           name: "Maharaja Feast",
           description: "Premium selection including kebabs, biryanis, and curries. Serves 100-150",
-          price: "$1499.99",
+          price: "₹14999",
           image: "https://images.unsplash.com/photo-1539755530862-00f623c00f52?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           items: [
             {
@@ -160,7 +160,7 @@ const Menu = () => {
         {
           name: "Corporate Lunch Package",
           description: "Perfect for office events with variety of starters and main course. Serves 50-75",
-          price: "$899.99",
+          price: "₹8999",
           image: "https://images.unsplash.com/photo-1576867757603-05b134ebc379?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           items: [
             {
