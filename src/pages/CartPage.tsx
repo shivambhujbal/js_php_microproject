@@ -84,6 +84,7 @@ const CartPage = () => {
             <Link
               to="/checkout"
               className="block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg text-center mt-6 w-full"
+            
             >
               Proceed to Checkout
             </Link>
