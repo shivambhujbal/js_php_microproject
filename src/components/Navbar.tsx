@@ -176,14 +176,14 @@ const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
-      <div className="bg-black border-2 border-purple-600 p-8 max-w-md w-full relative max-h-[80vh] overflow-y-auto">
+      <div className="bg-black border-2 border-purple-600 p-8 max-w-md w-full relative">
         <button 
           onClick={onClose}
           className="absolute top-4 right-4 text-white hover:text-purple-400"
         >
           <X size={24} />
         </button>
-  
+        
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-white mb-2 uppercase tracking-wide">
             {isLogin ? 'Log In' : 'Sign Up'}
@@ -194,7 +194,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
               : 'Create an account to order and earn rewards.'}
           </p>
         </div>
-  
+        
         <div className="flex mb-8 border-b border-purple-900">
           <button 
             className={`py-2 px-4 w-1/2 font-bold uppercase tracking-wide ${isLogin ? 'text-purple-400 border-b-2 border-purple-400' : 'text-gray-400'}`}
@@ -209,31 +209,36 @@ const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
             Sign Up
           </button>
         </div>
-  
-        {/* Name Input Field */}
-        <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium uppercase tracking-wide mb-2 text-white">Name</label>
-          <input
-            type="text"
-            id="name"
-            className="w-full bg-white/10 border-2 border-purple-400 rounded-none p-3 text-white focus:outline-none focus:border-purple-300"
-            placeholder="Enter your name"
-          />
-        </div>
-  
-        {/* Mobile Number Input Field */}
-        <div className="mb-4">
-          <label htmlFor="mobile" className="block text-sm font-medium uppercase tracking-wide mb-2 text-white">Mobile Number</label>
-          <input
-            type="tel"
-            id="mobile"
-            className="w-full bg-white/10 border-2 border-purple-400 rounded-none p-3 text-white focus:outline-none focus:border-purple-300"
-            placeholder="Enter your mobile number"
-          />
-        </div>
-  
+        
         <form className="space-y-6" onSubmit={handleSubmit}>
-          <div className="mb-4">
+          {/* Name Field - only visible on Sign Up */}
+          {!isLogin && (
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium uppercase tracking-wide mb-2 text-white">Name</label>
+              <input
+                type="text"
+                id="name"
+                className="w-full bg-white/10 border-2 border-purple-400 rounded-none p-3 text-white focus:outline-none focus:border-purple-300"
+                placeholder="Enter your name"
+              />
+            </div>
+          )}
+  
+          {/* Mobile Number Field - only visible on Sign Up */}
+          {!isLogin && (
+            <div>
+              <label htmlFor="mobile" className="block text-sm font-medium uppercase tracking-wide mb-2 text-white">Mobile Number</label>
+              <input
+                type="tel"
+                id="mobile"
+                className="w-full bg-white/10 border-2 border-purple-400 rounded-none p-3 text-white focus:outline-none focus:border-purple-300"
+                placeholder="Enter your mobile number"
+              />
+            </div>
+          )}
+          
+          {/* Email Field */}
+          <div>
             <label htmlFor="email" className="block text-sm font-medium uppercase tracking-wide mb-2 text-white">Email</label>
             <input
               type="email"
@@ -242,8 +247,9 @@ const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
               placeholder="your@email.com"
             />
           </div>
-  
-          <div className="mb-4">
+          
+          {/* Password Field */}
+          <div>
             <label htmlFor="password" className="block text-sm font-medium uppercase tracking-wide mb-2 text-white">Password</label>
             <input
               type="password"
@@ -252,9 +258,10 @@ const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
               placeholder="••••••••"
             />
           </div>
-  
+          
+          {/* Confirm Password Field (only visible on Sign Up) */}
           {!isLogin && (
-            <div className="mb-4">
+            <div>
               <label htmlFor="confirmPassword" className="block text-sm font-medium uppercase tracking-wide mb-2 text-white">Confirm Password</label>
               <input
                 type="password"
@@ -264,13 +271,14 @@ const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
               />
             </div>
           )}
-  
+          
+          {/* Forgot Password Link - only visible on Log In */}
           {isLogin && (
-            <div className="flex justify-end mb-4">
+            <div className="flex justify-end">
               <a href="#" className="text-sm text-purple-400 hover:text-purple-300">Forgot password?</a>
             </div>
           )}
-  
+          
           <button
             type="submit"
             className="w-full btn btn-primary"
@@ -278,7 +286,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
             {isLogin ? 'Log In' : 'Sign Up'}
           </button>
         </form>
-  
+        
         <div className="mt-6 text-center text-gray-400">
           <p>
             {isLogin 
@@ -294,7 +302,8 @@ const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
         </div>
       </div>
     </div>
-  );
+  );  
+  
 }  
 
 export default Navbar;
