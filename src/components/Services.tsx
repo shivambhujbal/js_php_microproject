@@ -6,7 +6,7 @@ const Services = () => {
     {
       icon: <Truck className="w-12 h-12 text-purple-400" />,
       title: "Free Delivery",
-      description: "On orders over $50"
+      description: "On orders over ₹5000"
     },
     {
       icon: <Users className="w-12 h-12 text-purple-400" />,
