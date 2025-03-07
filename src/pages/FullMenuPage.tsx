@@ -25,14 +25,14 @@ const FullMenuPage = () => {
         {
           name: "Paneer Tikka",
           description: "Marinated and grilled cottage cheese with spices",
-          price: "$12.99",
+          price: "₹120",
           type: "veg",
           image: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
         },
         {
           name: "Chicken Seekh Kebab",
           description: "Minced chicken skewers with aromatic spices",
-          price: "$14.99",
+          price: "₹140",
           type: "non-veg",
           image: "https://images.unsplash.com/photo-1605908580297-f3e1c02e64ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           },
@@ -40,14 +40,14 @@ const FullMenuPage = () => {
         {
           name: "Samosa",
           description: "Crispy pastry filled with spiced potatoes and peas",
-          price: "$6.99",
+          price: "₹60",
           type: "veg",
           image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
         },
         {
           name: "Fish Amritsari",
           description: "Battered and fried fish with Indian spices",
-          price: "$16.99",
+          price: "₹190",
           type: "non-veg",
           image: "https://images.unsplash.com/photo-1548704087-b11dab0fbec0?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
@@ -59,28 +59,28 @@ const FullMenuPage = () => {
         {
           name: "Butter Chicken",
           description: "Classic creamy tomato-based curry with tender chicken",
-          price: "$18.99",
+          price: "₹180",
           type: "non-veg",
           image: "https://masalaandchai.com/wp-content/uploads/2022/03/Butter-Chicken.jpg"
         },
         {
           name: "Dal Makhani",
           description: "Creamy black lentils cooked overnight",
-          price: "$14.99",
+          price: "₹140",
           type: "veg",
           image: "https://media.istockphoto.com/id/1170374719/photo/dal-makhani-at-dark-background.jpg?s=1024x1024&w=is&k=20&c=FVifOSqCkW0GdMqUmgddvJ6xKd4F6touOC4gVfrVT5c="
         },
         {
           name: "Biryani",
           description: "Fragrant rice with choice of protein and spices",
-          price: "$19.99",
+          price: "₹150",
           type: "non-veg",
           image: "https://plus.unsplash.com/premium_photo-1694141251673-1758913ade48?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
           name: "Palak Paneer",
           description: "Cottage cheese in creamy spinach gravy",
-          price: "$16.99",
+          price: "₹160",
           type: "veg",
           image: "https://images.unsplash.com/photo-1678358082845-db9ccd4efaaa?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
@@ -92,14 +92,14 @@ const FullMenuPage = () => {
         {
           name: "Butter Naan",
           description: "Soft bread from tandoor with butter",
-          price: "$3.99",
+          price: "₹20",
           type: "veg",
           image: "https://images.unsplash.com/photo-1611107415406-1c12f8cda424?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
           name: "Garlic Roti",
           description: "Whole wheat bread with garlic",
-          price: "$3.49",
+          price: "₹25",
           type: "veg",
           image: "https://plus.unsplash.com/premium_photo-1667428304095-35b50b35566a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
@@ -111,21 +111,21 @@ const FullMenuPage = () => {
         {
           name: "Gulab Jamun",
           description: "Deep-fried milk solids in sugar syrup",
-          price: "$5.99",
+          price: "₹50",
           type: "veg",
           image: "https://recipes.net/wp-content/uploads/2023/05/gulab-jamun-recipe_9fb159dc2674f395436a64666227c988-768x768.jpeg"
         },
         {
           name: "Rasmalai",
           description: "Soft cottage cheese dumplings in sweet milk",
-          price: "$6.99",
+          price: "₹60",
           type: "veg",
           image: "https://i.pinimg.com/originals/f5/f8/42/f5f842cb91597146df97a40f962fa699.jpg"
         },
         {
           name: "Kheer",
           description: "Rice pudding with cardamom and nuts",
-          price: "$4.99",
+          price: "₹50",
           type: "veg",
           image: "https://www.whiskaffair.com/wp-content/uploads/2019/04/Rice-Kheer-2-3.jpg"
         }
@@ -137,21 +137,21 @@ const FullMenuPage = () => {
         {
           name: "Mango Lassi",
           description: "Sweet yogurt drink with mango",
-          price: "$4.99",
+          price: "₹40",
           type: "veg",
           image: "https://ik.imagekit.io/bhug69xts/mango-lassi-cocktail.png"
           },
         {
           name: "Masala Chai",
           description: "Spiced Indian tea with milk",
-          price: "$3.99",
+          price: "₹10",
           type: "veg",
           image: "https://carameltintedlife.com/wp-content/uploads/2020/08/How-to-Make-Masala-Chai-1-of-1-7.jpg"
         },
         {
           name: "Sweet Lassi",
           description: "Traditional yogurt-based sweet drink. direct visit to lord shiva!",
-          price: "$3.99",
+          price: "₹25",
           type: "veg",
           image: "https://www.alchimiaweb.com/blogen/wp-content/uploads/2018/01/bol.jpg"},
       ]

@@ -47,7 +47,7 @@ return (
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="nav-link">Home</Link>
-            <Link to="/menu" className="nav-link">Menu</Link>
+            <Link to="/full-menu" className="nav-link">Menu</Link>
             <Link to="/rewards" className="nav-link">Rewards</Link>
 
             {/* If user is logged in, show profile icon, else show Order Now button */}
