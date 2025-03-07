@@ -135,36 +135,42 @@ const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
   const [isLogin, setIsLogin] = useState(true);
   const navigate = useNavigate();
 
-  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const email = (document.getElementById("email") as HTMLInputElement).value;
     const password = (document.getElementById("password") as HTMLInputElement).value;
     const confirmPasswordInput = document.getElementById("confirmPassword") as HTMLInputElement;
-  
-    if (!isLogin && confirmPasswordInput.value !== password) {
+    const nameInput = document.getElementById("name") as HTMLInputElement;
+    const mobileInput = document.getElementById("mobile") as HTMLInputElement;
+
+    if (!isLogin && confirmPasswordInput?.value !== password) {
       alert("Passwords do not match");
       return;
     }
-  
+
     const url = isLogin
       ? "http://localhost/auth/login.php"
       : "http://localhost/auth/register.php";
-  
+
+    const userData = isLogin
+      ? { email, password }
+      : { name: nameInput?.value, mobile: mobileInput?.value, email, password };
+
     const response = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify(userData),
     });
-  
+
     const data = await response.json();
     alert(data.message);
-  
+
     if (data.message.includes("successful")) {
       onClose();
       if (isLogin) navigate("/cart");
     }
   };
+
   
   
 
