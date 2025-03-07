@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-900 bg-black;
+  }
+
+  @font-face {
+    font-family: 'GroteskBold';
+    src: url('https://www.tacobell.com/fonts/UntitledSansWeb-Bold.woff2') format('woff2');
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-none transition-all duration-300 uppercase tracking-wider font-bold;
+  }
+  
+  .btn-primary {
+    @apply bg-purple-600 text-white hover:bg-purple-700;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-6 uppercase tracking-tight;
+  }
+
+  .nav-link {
+    @apply text-white hover:text-purple-400 transition-colors duration-300 uppercase tracking-wide;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}
