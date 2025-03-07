@@ -299,7 +299,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
         </div>
       </div>
     </div>
-  );
+  );  
   
 }  
 
